@@ -41,6 +41,18 @@ browsable(
 )
 ```
 
+Note the style is automatically applied to `body`.  If you don't want this to happen, change `addstyle=FALSE`.
+
+```{r eval=FALSE}
+browsable(
+  gf_add_font(
+    tag_list = tags$h1("Baloo Paaji provided by googlefontR"),
+    fontname = "Baloo Paaji",
+    addstyle = FALSE
+  )
+)
+```
+
 # Code of Conduct
 
 I welcome contributions.  Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
