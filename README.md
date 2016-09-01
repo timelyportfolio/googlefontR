@@ -43,6 +43,33 @@ browsable(
 )
 ```
 
+### with svglite
+
+I think `googlefontR` will work great with [`svglite`](https://github.com/svglite).
+
+``` r
+library(svglite)
+library(htmltools)
+library(googlefontR)
+
+s<-svgstring(standalone=FALSE)
+plot(cars)
+dev.off()
+
+gf_add_font(
+  HTML(
+    gsub(
+      x = s(),
+      pattern = "(font-family: Arial;)",
+      replacement = ""
+    )
+  ),
+  "Architects Daughter"
+)
+```
+
+![screenshot of svg graph with gooogle font](./inst/images/readme-screenshot-1.png)
+
 Code of Conduct
 ===============
 
