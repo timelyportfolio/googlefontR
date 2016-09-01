@@ -4,15 +4,18 @@
 \alias{gf_add_font}
 \title{Add Google Fonts to 'tags' or 'tagList'}
 \usage{
-gf_add_font(tags = htmltools::tagList(), fontname = NULL,
-  customstyle = character())
+gf_add_font(tag_list = htmltools::tagList(), fontname = NULL,
+  customstyle = character(), addstyle = TRUE)
 }
 \arguments{
-\item{tags}{\code{htmltools::tags} or \code{htmltools::tagList}}
+\item{tag_list}{\code{htmltools::tags} or \code{htmltools::tagList}}
 
 \item{fontname}{\code{character} valid Google Font name}
 
 \item{customstyle}{\code{character} of custom weights and styles}
+
+\item{addstyle}{\code{logical} to add style tag to use
+the Google Font for body text}
 }
 \value{
 \code{htmltools::tags} or \code{htmltools::tagList} with

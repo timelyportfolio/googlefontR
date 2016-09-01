@@ -16,6 +16,25 @@ gf_font_with_plus <- function(fontname=NULL) {
   }
 }
 
+#' Substitute Space for Plus in Font Name
+#'
+#' @param fontname \code{character} font name
+#'
+#' @return \code{character} font name with space instead of '+'
+#' @export
+gf_font_with_space <- function(fontname=NULL) {
+  if(grepl(x=fontname,pattern=" ")){
+    return(fontname)
+  } else {
+    gsub(
+      x=fontname,
+      pattern="[+]",
+      replacement=" ",
+      perl=TRUE
+    )
+  }
+}
+
 
 
 #' Generate URL for Google Font
@@ -68,17 +87,38 @@ gf_font_dep <- function(fontname=NULL, customstyle=character()) {
 
 #' Add Google Fonts to 'tags' or 'tagList'
 #'
-#' @param tags \code{htmltools::tags} or \code{htmltools::tagList}
+#' @param tag_list \code{htmltools::tags} or \code{htmltools::tagList}
 #' @inheritParams gf_font_dep
+#' @param addstyle \code{logical} to add style tag to use
+#'          the Google Font for body text
 #'
 #' @return \code{htmltools::tags} or \code{htmltools::tagList} with
 #'           attached Google Font dependency
 #' @export
-gf_add_font <- function(tags=htmltools::tagList(), fontname=NULL, customstyle=character()) {
+gf_add_font <- function(
+  tag_list=htmltools::tagList(),
+  fontname=NULL,
+  customstyle=character(),
+  addstyle=TRUE
+){
   stopifnot(!is.null(fontname))
 
+  if(addstyle){
+    tag_list <- htmltools::tagList(
+      tags$head(
+        tags$style(
+          sprintf(
+            "body {font-family:%s;}",
+            gf_font_with_space(fontname)
+          )
+        )
+      ),
+      tag_list
+    )
+  }
+
   htmltools::attachDependencies(
-    tags,
+    tag_list,
     gf_font_dep(fontname=fontname, customstyle=customstyle)
   )
 }

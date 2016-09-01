@@ -12,6 +12,18 @@ test_that("gf_font_with_plus leaves alone if plus", {
   expect_identical(gf_font_with_plus("Open+Sans"),"Open+Sans")
 })
 
+test_that("gf_font_with_space warns if no font name", {
+  expect_error(gf_font_with_plus())
+})
+
+test_that("gf_font_with_space subs plus for space", {
+  expect_identical(gf_font_with_space("Open+Sans"),"Open Sans")
+})
+
+test_that("gf_font_with_plus leaves alone if space", {
+  expect_identical(gf_font_with_space("Open Sans"),"Open Sans")
+})
+
 test_that("gf_font_url errors if no font name", {
   expect_error(gf_font_url())
 })

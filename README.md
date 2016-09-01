@@ -25,7 +25,7 @@ library("htmltools")
 
 browsable(
   gf_add_font(
-    tags$h1(style="font-family:Baloo Paaji","Baloo Paaji provided by googlefontR"),
+    tags$h1("Baloo Paaji provided by googlefontR"),
     "Baloo Paaji"
   )
 )
