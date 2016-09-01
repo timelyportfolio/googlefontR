@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/timelyportfolio/googlefontR.svg?branch=master)](https://travis-ci.org/timelyportfolio/googlefontR)[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/googlefontR)](https://cran.r-project.org/package=googlefontR) [![Coverage Status](https://img.shields.io/codecov/c/github/NA/NA/master.svg)](https://codecov.io/github/timelyportfolio/googlefontR?branch=master)
+[![Travis-CI Build Status](https://travis-ci.org/timelyportfolio/googlefontR.svg?branch=master)](https://travis-ci.org/timelyportfolio/googlefontR)[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/googlefontR)](https://cran.r-project.org/package=googlefontR) [![Coverage Status](https://img.shields.io/codecov/c/github/timelyportfolio/googlefontR/master.svg)](https://codecov.io/github/timelyportfolio/googlefontR?branch=master)
 
 Why googlefontR?
 ================

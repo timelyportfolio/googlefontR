@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 ```
 
 [![Travis-CI Build Status](https://travis-ci.org/timelyportfolio/googlefontR.svg?branch=master)](https://travis-ci.org/timelyportfolio/googlefontR)[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/googlefontR)](https://cran.r-project.org/package=googlefontR)
-[![Coverage Status](https://img.shields.io/codecov/c/github/NA/NA/master.svg)](https://codecov.io/github/timelyportfolio/googlefontR?branch=master)
+[![Coverage Status](https://img.shields.io/codecov/c/github/timelyportfolio/googlefontR/master.svg)](https://codecov.io/github/timelyportfolio/googlefontR?branch=master)
 
 # Why googlefontR?
 
