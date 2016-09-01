@@ -1,0 +1,20 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+[![Travis-CI Build Status](https://travis-ci.org/timelyportfolio/googlefontR.svg?branch=master)](https://travis-ci.org/timelyportfolio/googlefontR)[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/googlefontR)](https://cran.r-project.org/package=googlefontR)
+
+
+### Code of Conduct
+
+I welcome contributions.  Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

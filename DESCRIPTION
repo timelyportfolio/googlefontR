@@ -1,0 +1,22 @@
+Package: googlefontR
+Title: Use Google Fonts in R
+Version: 0.0.0.9000
+Date: 2016-09-01
+Authors@R: c(
+    person("Kenton","Russell", role = c("aut","cre"), comment = "R interface" , email = "kent.russell@timelyportfolio.com" )
+  )
+Description: 'googlefontR' provides helper functions to ease
+    the use of Google Fonts with R.
+URL: https://github.com/timelyportfolio/googlefontR
+BugReports: https://github.com/timelyportfolio/googlefontR/issues
+Depends:
+    R (>= 3.2.0)
+License: MIT + file LICENSE
+Imports:
+    htmltools(>= 0.3.5),
+    jsonlite
+Encoding: UTF-8
+LazyData: true
+Suggests:
+    testthat
+RoxygenNote: 5.0.1
