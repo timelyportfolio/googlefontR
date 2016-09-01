@@ -105,8 +105,8 @@ gf_add_font <- function(
 
   if(addstyle){
     tag_list <- htmltools::tagList(
-      tags$head(
-        tags$style(
+      htmltools::tags$head(
+        htmltools::tags$style(
           sprintf(
             "body {font-family:%s;}",
             gf_font_with_space(fontname)
